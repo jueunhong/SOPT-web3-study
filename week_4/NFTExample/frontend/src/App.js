@@ -10,7 +10,7 @@ const OPENSEA_LINK = '';
 const TOTAL_MINT_COUNT = 50;
 
 // I moved the contract address to the top for easy access.
-const CONTRACT_ADDRESS = "0xF1aD06077E05ebD0e0c0e8eBC104fE436c560D6F";
+const CONTRACT_ADDRESS = "0xA6f41426Ceb3ab8E7Eba800281fFF67045ca4570";
 
 const App = () => {
 
@@ -59,9 +59,10 @@ const App = () => {
       console.log("Connected to chain " + chainId);
 
       // String, hex code of the chainId of the Rinkebey test network
-      const rinkebyChainId = "0x4";
-      if (chainId !== rinkebyChainId) {
-        alert("You are not connected to the Rinkeby Test Network!");
+      // const rinkebyChainId = "0x4";
+      const polygonChainId = "137";
+      if (chainId !== polygonChainId) {
+        alert("You are not connected to the Polygon Network!");
       }
 
       // Setup listener! This is for the case where a user comes to our site

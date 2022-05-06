@@ -12,17 +12,17 @@ contract MyEpicNFT is ERC721URIStorage {
   using Counters for Counters.Counter;
   Counters.Counter private _tokenIds;
 
-  string baseSvg = "<svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMin meet' viewBox='0 0 350 350'><style>.base { fill: white; font-family: serif; font-size: 24px; }</style><rect width='100%' height='100%' fill='black' /><text x='50%' y='50%' class='base' dominant-baseline='middle' text-anchor='middle'>";
+  string baseSvg = "<svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMin meet' viewBox='0 0 350 350'><style>.base { fill: white; font-family: serif; font-size: 24px; }</style><rect width='100%' height='100%' fill='lightsteelblue' /><text x='50%' y='50%' class='base' dominant-baseline='middle' text-anchor='middle'>";
   
   
-  string[] firstWords = ["BLAH", "BLAH", "BLAH"];
-  string[] secondWords = ["BLAH", "BLAH", "BLAH"];
-  string[] thirdWords = ["BLAH", "BLAH", "BLAH"];
+  string[] firstWords = ["sky", "river", "tree"];
+  string[] secondWords = ["iphone", "green", "blue"];
+  string[] thirdWords = ["good", "car", "mark"];
 
   // MAGICAL EVENTS.
   event NewEpicNFTMinted(address sender, uint256 tokenId);
 
-  constructor() ERC721 ("SquareNFT", "SQUARE") {
+  constructor() ERC721 ("Jueun", "Jueun") {
     console.log("This is my NFT contract. Woah!");
   }
 
